@@ -1,0 +1,7 @@
+<div>
+    <h2>{{ hand.playerName | titlecase }}</h2>
+    <span *ngFor="let card of hand.cards; let i = index">
+        <img src="/assets/images/card_{{ card.num }}_{{ card.suit }}.png">
+        <button type="button" (click)="removeCard(i)">X</button>
+    </span>
+</div>

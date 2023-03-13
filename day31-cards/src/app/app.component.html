@@ -1,0 +1,3 @@
+<app-hand *ngFor="let p of players" [hand]="p"
+  (onRemoveCard)="removeCard($event)"
+></app-hand>
